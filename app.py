@@ -13,7 +13,7 @@ logging.basicConfig(
 logger = logging.getLogger(__name__)
 
 st.set_page_config(
-    page_title="LVMH Graph RAG System",
+    page_title="LVMH SupplyChain Superbrain",
     page_icon="🏥",
     layout="wide"
 )
@@ -58,7 +58,7 @@ def run_cypher_query(query, neo4j_uri, neo4j_user, neo4j_password):
         driver.close()
 
 def main():
-    st.title("LVMH Knowledge Graph RAG")
+    st.title("LVMH SupplyChain Superbrain")
     
     st.markdown("### Ask a question about LVMH Vendors, Supply Chain or operations")
     st.markdown("""
