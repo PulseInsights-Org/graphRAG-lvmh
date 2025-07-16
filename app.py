@@ -63,10 +63,9 @@ def main():
     st.markdown("### Ask a question about LVMH Vendors, Supply Chain or operations")
     st.markdown("""
     Example questions:
-    - What diseases are associated with fever and cough?
-    - How many cases of Asthma are there in the database?
-    - What are the symptoms of Influenza?
-    - Show male patients over 50 with heart conditions.
+    - Can you give me executives/managers names in LVMH?
+    - What were the issues found within Zenith Textiles?
+    - Where and which product has HS code risk?
     """)
     
     neo4j_uri, neo4j_user, neo4j_password, google_api_key = setup_connections()
@@ -177,6 +176,7 @@ def main():
                   No combining keywords unless individually searched.
                   No cross-node assumptions unless supported by explicit relations.
                   No invented or assumed facts — only synthesize from observed graph patterns.
+                  Never include any IDs in your response, Just output without any specification of them. Ex : "I found it in a document database"
 
                   Example Workflows
                   Service Availability:
